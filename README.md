@@ -1,73 +1,126 @@
-# React + TypeScript + Vite
+# React Mini-App (Dashboard + Hooks)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This is a small React application built with **TypeScript** and **Vite**.
+It demonstrates a dashboard with:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* A list of projects with a **search filter**
+* Project details page via **React Router**
+* A **custom hook (`useProjects`)** for fetching data (mocked locally)
+* Minimalist styling for better readability
+* Accessibility (A11y) with at least one `aria-*` attribute
+* Unit tests with **Vitest** and **React Testing Library**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Requirements
 
-## Expanding the ESLint configuration
+* Node.js >= 18
+* Yarn >= 1.22
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Installation & Run Instructions
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 1. Install dependencies
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+yarn install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+> This will install all required packages, including React, Vite, TypeScript, ESLint, Prettier, Vitest, and Testing Library.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 2. Run the development server
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+yarn dev
 ```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+The app will hot-reload on code changes.
+
+### 3. Build the project for production
+
+```bash
+yarn build
+```
+
+### 4. Preview the production build
+
+```bash
+yarn preview
+```
+
+---
+
+## Running Tests
+
+### Run all tests once
+
+```bash
+yarn test
+```
+
+### Run tests in watch mode (auto-re-run on changes)
+
+```bash
+yarn test:watch
+```
+
+> All components have **co-located tests** using **Vitest** and **React Testing Library**.
+
+---
+
+## ESLint & Prettier
+
+Check code with ESLint:
+
+```bash
+yarn lint
+```
+
+Format code with Prettier:
+
+```bash
+yarn format
+```
+
+> ESLint + Prettier are configured for **React + TypeScript + tests**.
+
+---
+
+## Project Structure
+
+```
+src/
+│
+├── components/          # React components (e.g., ProjectCard)
+├── pages/               # Pages (ProjectsList, ProjectDetails)
+├── hooks/               # Custom hooks (useProjects)
+├── tests/               # Global test setup for Vitest + RTL
+├── App.tsx              # Main app component
+├── main.tsx             # App entry point
+└── types.ts             # Type definitions
+```
+
+---
+
+## Accessibility (A11y)
+
+* Search input has `aria-label="Search projects"`
+* Project list uses `role="list"` and `aria-live="polite"`
+
+---
+
+## Notes
+
+* Each component has its own CSS file for **modular styling**
+* Default Vite favicon is replaced/removed for a clean tab icon
+* Minimalist styling applied for better spacing and readability
+
+---
+
+## Author
+
+* [Your Name]
