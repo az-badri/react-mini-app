@@ -38,19 +38,7 @@ yarn dev
 ```
 
 Open [http://localhost:5173](http://localhost:5173) in your browser.
-The app will hot-reload on code changes.
 
-### 3. Build the project for production
-
-```bash
-yarn build
-```
-
-### 4. Preview the production build
-
-```bash
-yarn preview
-```
 
 ---
 
