@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { projects as mockProjects, Project } from '../api/projectsData';
+import { projects as mockProjects, type Project } from '../api/projectsData';
 
 export function useProjects(initialQuery: string = '') {
     const [query, setQuery] = useState(initialQuery);
