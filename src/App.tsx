@@ -1,19 +1,16 @@
-import type { FC } from 'react'
-import { Routes, Route } from 'react-router-dom'
-import ProjectsList from './pages/ProjectsList'
-import ProjectDetails from './pages/ProjectDetails'
+import { Routes, Route } from "react-router-dom";
+import { ProjectsList } from "./pages/ProjectsList/ProjectsList.tsx";
+import { ProjectDetails } from "./pages/ProjectDetails/ProjectDetails.tsx";
 
-const App: FC = () => {
+import "./App.css";
+
+export default function App() {
     return (
-        <div className="app">
-            <main>
-                <Routes>
-                    <Route path="/" element={<ProjectsList />} />
-                    <Route path="/projects/:id" element={<ProjectDetails />} />
-                </Routes>
-            </main>
+        <div className="container">
+            <Routes>
+                <Route path="/" element={<ProjectsList />} />
+                <Route path="/projects/:id" element={<ProjectDetails />} />
+            </Routes>
         </div>
-    )
+    );
 }
-
-export default App

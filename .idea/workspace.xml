@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e7bacd6-8846-4ecd-88d7-21e80a079c5f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ProjectCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/ProjectDetails.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/ProjectsList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProjectCard/ProjectCard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/ProjectDetails/ProjectDetails.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/ProjectsList/ProjectsList.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useProjects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useProjects.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProjectCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectCard/ProjectCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ProjectDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ProjectDetails/ProjectDetails.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ProjectsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ProjectsList/ProjectsList.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +46,13 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/ProjecsList" />
+      <recent name="$PROJECT_DIR$/src/pages/ProjectDetails" />
+      <recent name="$PROJECT_DIR$/src/components/ProjectCard" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -65,7 +72,7 @@
       <workItem from="1763061496189" duration="740000" />
       <workItem from="1763062269876" duration="2103000" />
       <workItem from="1763114269519" duration="262000" />
-      <workItem from="1763208824537" duration="1603000" />
+      <workItem from="1763208824537" duration="3455000" />
     </task>
     <servers />
   </component>
