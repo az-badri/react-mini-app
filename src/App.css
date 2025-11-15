@@ -1,0 +1,16 @@
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.title {
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  font-size: 28px;
+}
