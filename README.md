@@ -104,23 +104,6 @@ src/
 └── types.ts             # Type definitions
 ```
 
----
-
-## Accessibility (A11y)
-
-* Search input has `aria-label="Search projects"`
-* Project list uses `role="list"` and `aria-live="polite"`
-
----
-
-## Notes
-
-* Each component has its own CSS file for **modular styling**
-* Default Vite favicon is replaced/removed for a clean tab icon
-* Minimalist styling applied for better spacing and readability
-
----
-
 ## Author
 
-* [Your Name]
+* Azamat Badri
