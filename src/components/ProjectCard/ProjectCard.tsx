@@ -5,7 +5,7 @@ interface Props {
     project: Project;
 }
 
-export default function ProjectCard({ project }: Props) {
+export const ProjectCard = ({ project }: Props)=> {
     return (
         <div className="project-card">
             <h3 className="project-title">{project.title}</h3>
@@ -13,3 +13,5 @@ export default function ProjectCard({ project }: Props) {
         </div>
     );
 }
+
+export default ProjectCard;

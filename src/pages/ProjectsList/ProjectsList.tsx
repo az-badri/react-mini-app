@@ -34,7 +34,7 @@ export const ProjectsList = () => {
                         <ProjectCard project={p} />
                     </Link>
                 ))}
-                {!filtered.length && (<>No projects found.</>)}
+                {!filtered.length && (<div>No projects found.</div>)}
             </div>
         </div>
     );
